@@ -30,6 +30,14 @@ userName		VARCHAR(45)
 userEmail		VARCHAR(45)
 ```
 
+#### Sample Reponse
+
+```
+(
+	("abc123", "Brick", "brick@gmail.com"),
+)
+```
+
 ### PRODUCTS
 
 Products are identified by a unique productId, along with their name and price.
@@ -38,6 +46,14 @@ Products are identified by a unique productId, along with their name and price.
 productId		VARCHAR(45)
 productName		VARCHAR(45)
 productPrice	DOUBLE
+```
+
+#### Sample Reponse
+
+```
+(
+	("def456", "Lamp", 10.0),
+)
 ```
 
 ### TRANSACTIONS
@@ -51,6 +67,14 @@ productId		VARCHAR(45)
 timestamp		DATETIME
 ```
 
+#### Sample Reponse
+
+```
+(
+	("ghi789", "abc123", "def456", "2011-12-18 13:17:17"),
+)
+```
+
 ### SALARIES
 
 Salaries record money into a user's bank account at regular intervals.
@@ -61,6 +85,14 @@ amount			DOUBLE
 timestamp		DATETIME
 ```
 
+#### Sample Reponse
+
+```
+(
+	("abc123", 100, "2011-11-18 13:17:17"),
+)
+```
+
 ### DISCOUNTS
 
 Some users are entitled to a percentage discount on certain products, which can be up to 100%.
@@ -69,6 +101,14 @@ Some users are entitled to a percentage discount on certain products, which can 
 userId			VARCHAR(45)
 productId		VARCHAR(45)
 percentage		DOUBLE
+```
+
+#### Sample Reponse
+
+```
+(
+	("abc123", "def456", 25.0),
+)
 ```
 
 ## Database API
