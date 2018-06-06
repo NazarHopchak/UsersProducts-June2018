@@ -82,7 +82,7 @@ The UserFactory class is instantiated with a databaseConnection object which has
  * @param String 							queryString
  * @param (Error error, Obj[] rows) => {} 	callback
  */
-func query(queryString, callback)
+query(queryString, callback)
 
 /**
  * Executes a query with an array of input values
@@ -91,5 +91,5 @@ func query(queryString, callback)
  * @param [][]								inputValues
  * @param (Error error, Obj[] rows) => {} 	callback
  */
-func query(queryString, inputValues, callback)
+query(queryString, inputValues, callback)
 ```
